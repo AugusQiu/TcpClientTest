@@ -1,0 +1,376 @@
+.appWrap{
+    width:100%;
+}
+.flex{
+    display: flex;
+}
+
+.tabListWrap{
+    width:100%;
+    background-color: #ddd;
+    position: fixed;
+    top:0;
+    /* border-bottom:1px solid #2d9cd5; */
+}
+.tabWrap{
+    width:112px;
+    height:22px;
+    background-color: #ddd;
+    border-bottom:1px solid #2d9cd5;
+    cursor: 'pointer';
+    padding-top:8px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.tabTitle{
+    text-align: center;
+    width:73px;
+    font-size:15px;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+.active{
+    color:#3193c5;
+    background-color: #fff;
+    border-bottom:1px solid #fff;
+    border-top:1px solid #2d9cd5;
+    border-left:1px solid #2d9cd5;
+    border-right:1px solid #2d9cd5;
+}
+
+.tabTag{
+    font-size: 14px;
+    color:green;
+    top:0px;
+    left:2px;
+    position: absolute;
+}
+.delIcon{
+    width:11px;
+    height: 11px;
+    position: absolute;
+    left:96px;
+    top:11px;
+    cursor:pointer;
+}
+
+
+.newWrap{
+    width:calc(100%-40px);
+    margin:40px auto;
+    /* border-top: 2px solid #797979; */
+ }
+
+.tc_border{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:106px;
+    padding-top: 20px;
+    border-bottom:1px solid #797979;
+}
+.tc_prompt{
+    display: block;
+    width:600px;
+    margin-left: 50px;
+}
+.tc_prompt>p:nth-of-type(1){
+    font-size:22px;
+    font-weight: bold;
+}
+.tc_prompt>p:nth-of-type(2){
+    font-size:16px;
+    margin-top: 10px;
+}
+
+.TCP1{
+    width:188px;
+    height: 60px;
+    border:2px solid #797979;
+    padding-top: 26px;
+   
+}
+.TCP1>p{
+   font-size:25px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.newTCBtn{
+  width: 124px;
+  height: 60px;
+  margin-top:15px;
+}
+
+.footer{
+    width:100%;
+    height:30px;
+    position:fixed;
+    background-color: #fff;
+    border-top: 1px solid #797979;
+    overflow: hidden;
+    padding-top: 5px;
+    bottom: 0;
+}
+
+/* TcpClient.css */
+.TCWrap{
+  width:1400px;
+  margin:45px auto 40px;
+}
+
+
+.TCconnect{
+   width: 96%;
+   margin-left: 2%;
+   height:35px;
+   overflow: hidden;
+}
+.TCtag{
+    width:60px;
+    height: 35px;
+    background-color: #dcdcdc;
+    text-align:center;
+    padding-top:8px;
+}
+.TCtag>h4{
+    font-size: 18px;
+}
+.TCtitle{
+  width: 32%;
+  height:30px;
+  background-color: #DCDCDC;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 30px;
+}
+.input1,.input2,.input3{
+    border: 1px solid #dcdcdc;
+    width:68%;
+   
+}
+
+
+.conBtn{
+    width:150px;
+    height: 35px;
+    color:#fff;
+    background-color: #3e72a3;
+    border: none;
+    outline: none; 
+    margin-left:60px;
+}
+
+
+/* 连接提示信息 */
+
+.TCprompt{
+    width:100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+}
+.red{
+    color:red;
+}
+/* 收发数据展示 */
+.showDataWrap,.sendDataWrap{
+    width:100%;
+    border: 1px solid #797979;
+    margin-top: 20px;
+    overflow: hidden;
+    height:350px;
+}
+
+/* 发送数据 */
+.sdHeaderWrap{
+    width:100%;
+    height:42px;
+    background-color: #3e72a3;
+    overflow: hidden;
+    padding-top: 6px;
+}
+.sdHeader{
+    width:96%;
+    margin-left: 2%;
+    /* height:46px; */
+    /* background-color: #3e72a3; */
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    /* padding-top:7px; */
+}
+
+.sdHeader>button{
+    width:10%;
+    height:32px;
+    /* background-color: #3e72a3; */
+    border: none;
+    outline: none; 
+}
+.sdHeader>button[disabled]{
+    background-color: #a9a9a9;
+}
+
+.sdHeader>ul{
+    width:20%;
+    height:32px;
+    margin-top: 10px;
+}
+
+.sdHeader>a{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sdLiactive{
+    border-bottom: 3px solid #797979;
+}
+.sdLeft,.sdRight{
+    width:47%;
+    margin-left: 2%;
+    height:278px;
+    border: 1px solid #797979;
+    margin-top:10px;
+    overflow: hidden; 
+}
+.sdRight{
+    background-color: #f2f2f2;
+    word-break: break-all;
+    overflow-y: auto;
+}
+
+.inputWrap{
+    width:100px;
+    height:25px;
+    position:relative;
+    padding-top: 5px;
+    background-color:#d7d7d7;
+}
+.inputWrap>p{
+    text-align: center;
+    font-size:16px;
+}
+.inputWrap>input{
+    width:100%;
+    height:100%;
+    position:absolute;
+    opacity: 0;
+    top:0;
+    left:0;
+}
+
+.foldInput{
+    width:400px;
+    height:30px;
+    margin-top: 5px;
+}
+.foldFileWrap{
+    margin-top: 5px;
+    width:600px;
+    display: flex;
+    justify-content: space-between;
+}
+.foldFileWrap>p{
+    margin-top: 5px;
+    width:450px;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* 展示数据区域 */
+.showDataLeft,.showDataRight{
+    width:47%;
+    margin-left: 2%;
+    height:330px;
+    border: 1px solid #797979;
+    margin-top:10px;
+    overflow: hidden;
+}
+.srHeader{
+    display: flex;
+    width:100%;
+    height:35px;
+    background-color: #3e72a3;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.srHeader>p{
+    color:#fff;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+.srHeader>h3{
+    font-size: 30px;
+    margin-left: 5px;
+}
+.showMode{
+    margin-left: 15px;
+    margin-top: 6px;
+}
+.srBtns{
+    width:98%;
+    height:30px;
+    margin-left: 1%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.srBtns>button{
+    width:100px;
+    height: 35px;
+    margin-top: 5px;
+    color:#fff;
+    background-color: #3e72a3;
+    border: none;
+    outline: none; 
+}
+.srBtns>button[disabled]{
+   background-color: #a9a9a9;
+}
+.srMain{
+    width:98%;
+    margin-left: 1%;
+    height:235px;
+    margin-top: 12px;
+    border:1px solid #797979;
+    overflow: hidden;
+    white-space :nowrap;
+    overflow-x:auto;
+    overflow-y: auto;
+}
+.hexTable{
+    width:100%;
+    color:#589c89;
+    text-align: center;
+    background-color: #d4dad9;
+}
+.hexTable>tr>td:nth-of-type(1){
+    color:#589c89;
+}
+.hexTable>tr>td{
+    color:#e67875;
+    font-size:14px;
+}
+.tableTR>th{
+    width: 3%;
+}
+
+.tableActive{
+    border:1px solid #37D7FF;
+    /* background-color: #37d7ff; */
+}
+.grayBg{
+    background-color:#f2f2f2;
+}
+.lineFeedIco{
+    width:20px;
+    height:20px;
+    margin-top: 5px;
+    margin-left: 12px;
+}
